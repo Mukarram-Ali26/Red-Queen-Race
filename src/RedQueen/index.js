@@ -6,8 +6,6 @@ export const RedQueenRace = () => {
     var playbackrateRQ = 1;
     var playbackrateBG = 1;
 
- 
-
     const sceneryFrames = [
         { transform: "translateX(100%)" },
         { transform: "translateX(-100%)" },
@@ -17,7 +15,6 @@ export const RedQueenRace = () => {
         iterations: Infinity,
         playbackRate: playbackrateBG,
     };
-
     const sceneryTimingForeground = {
         duration: 12000,
         iterations: Infinity,
@@ -102,7 +99,7 @@ export const RedQueenRace = () => {
             redQueen_alice.getAnimation().playbackRate = playbackrateRQ;
             adjustBackgroundPlayback();
         });
-    });
+    },[]);
 
     return (
         <div>
